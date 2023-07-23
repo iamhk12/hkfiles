@@ -50,7 +50,9 @@ const Login = () => {
 
     const [pass, setPassword] = useState("");
 
-    const Verify = () => {
+    const Verify = async (e) => {
+        e.preventDefault();
+
         if (pass !== "Kothari@111" || pass !== "@iamHK12") {
             alert("Incorrect Password");
             return;
