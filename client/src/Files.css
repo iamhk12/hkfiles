@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.boldtext {
+  font-weight: 800;
+  width: 65%;
+  font-size: 14px;
+
+  /* Add this line */
+}
+
+.fileBtn.activeFile {
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+}
+
+.fileBtn {
+  padding: 10px;
+  padding-left: 15px;
+  text-align: left;
+  background-color: #00000000;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  text-align: justify;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* color: white; */
+  color: white;
+  background: #303030;
+  background: linear-gradient(-150deg, #222222, #373737, #3c4859);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 50px;
+
+}
+
+
+button {
+  border: none;
+}
+
+.fileUploadDiv {
+  padding: 30px 20px;
+  width: 260px;
+  /* border: 2px solid white; */
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: #0000009d 0px 0px 40px;
+  border-radius: 10px;
+  border: 1px solid #ffffff5a;
+}
+
+.uploadBtn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  outline: #fff 2px solid;
+  border: none;
+  outline-offset: 3px;
+  background-color: rgb(2, 116, 255);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  max-width: 100px;
+  transition: all 0.2s ease;
+}
+
+.uploadBtn:hover {
+  color: rgb(2, 116, 255);
+  background-color: white;
+}
+
+
+.smallfont {
+  font-size: 7px;
+}
+
+.headerH1 {
+  margin-bottom: 30px;
+}
+
+.file_input::-webkit-file-upload-button {
+  margin-right: 10px;
+  background-color: #000000;
+  border: none;
+  padding: 8px 12px;
+  color: wheat;
+  border: wheat 2px solid;
+  margin-bottom: 30px;
+}
+
+.file-list {
+  margin-top: 20px;
+  display: flex;
+  width: 260px;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  /* max-width: 300px; */
+  padding: 10px 20px;
+  box-shadow: #0000009d 0px 0px 40px;
+  border: 1px solid #ffffff5a;
+
+  border-radius: 10px;
+
+}
+
+.varfile {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.datePopup {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(0, 166, 255);
+  align-items: center;
+  font-size: 13px;
+}
+
+.downloadIcon {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 7px 10px;
+  color: rgb(0, 0, 0);
+  background-color: #f0f0f0;
+  font-weight: 800;
+  box-shadow: #00000020 0px 0px 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+
+
+.downloadIcon:hover {
+  background-color: #00000000;
+  color: rgb(64, 153, 255);
+
+}
+
+.deleteIcon {
+  background-color: red;
+  box-shadow: #00000020 0px 0px 50px;
+  border-radius: 50%;
+  padding: 10px 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid red;
+  transition: all 0.2s ease;
+  margin-top: 3px;
+
+}
+
+.deleteIcon:hover {
+  background-color: #00000000;
+  border: 2px solid white;
+  color: red;
+
+}
+
+.file-action {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.file-action:hover {
+  background-color: #ddd;
+}
+
+
+.logoutBtn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 5px 7px;
+  background-color: #303030;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+
+
+@media screen and (min-width : 768px) {
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    color: white;
+    background: #303030;
+    background: linear-gradient(-150deg, #222222, #373737, #3c4859);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+
+  }
+
+  
+.file-list {
+  margin-top: 70px;
+  display: flex;
+  width: 260px;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  /* max-width: 300px; */
+  padding: 10px 20px;
+  box-shadow: #0000009d 0px 0px 40px;
+  border: 1px solid #ffffff5a;
+
+  border-radius: 10px;
+
+}
+
+}
