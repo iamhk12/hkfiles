@@ -37,7 +37,7 @@ function Files() {
                 const base64String = reader.result.split(',')[1];
 
                 try {
-                    const response = await fetch('http://localhost:5000/upload', {
+                    const response = await fetch('https://hkfiles.onrender.com/upload', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function Files() {
 
     const getFiles = async () => {
         try {
-            const response = await fetch('http://localhost:5000/getFiles');
+            const response = await fetch('https://hkfiles.onrender.com/getFiles');
             const data = await response.json();
             setFiles(data);
         } catch (error) {
@@ -103,7 +103,7 @@ function Files() {
 
     const handleFileDelete = async (fileId) => {
         try {
-            const response = await fetch(`http://localhost:5000/deleteFile/${fileId}`, {
+            const response = await fetch(`https://hkfiles.onrender.com/deleteFile/${fileId}`, {
                 method: 'DELETE',
             });
 
