@@ -108,7 +108,7 @@ button {
 .file-list {
   margin-top: 20px;
   display: flex;
-  width : 390px;
+  width : 260px;
   flex-direction: column;
   /* border: 1px solid white; */
   /* max-width: 300px; */
@@ -229,7 +229,7 @@ button {
 .file-list {
   margin-top: 70px;
   display: flex;
-  width: 260px;
+  width: 380px;
   flex-direction: column;
   /* border: 1px solid white; */
   /* max-width: 300px; */
