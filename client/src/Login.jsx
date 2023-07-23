@@ -53,11 +53,11 @@ const Login = () => {
     const Verify = async (e) => {
         e.preventDefault();
 
-        if (pass !== "Kothari@111" || pass !== "@iamHK12") {
+        if (pass !== 'Kothari@111' && pass !== "@iamHK12"){
             alert("Incorrect Password");
             return;
         }
-        if (pass === "Kothari@111" ||  pass === "@iamHK12") {
+        if (pass === "Kothari@111" || pass === "@iamHK12") {
             localStorage.setItem("password", pass);
             navigate("/")
         }

@@ -19,7 +19,7 @@ function Files() {
     useEffect(() => {
         const storedPassword = localStorage.getItem('password');
 
-        if (storedPassword !== 'Kothari@111' ||  storedPassword !== "@iamHK12") {
+        if (storedPassword !== 'Kothari@111' && storedPassword !== "@iamHK12") {
             navigate('/logout');
         }
 
